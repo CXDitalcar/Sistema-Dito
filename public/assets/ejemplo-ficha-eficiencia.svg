@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <rect width="480" height="300" rx="24" fill="#111317"/>
+  <rect x="18" y="18" width="444" height="264" rx="18" fill="#171a20" stroke="#C8102E" stroke-width="2"/>
+  <text x="40" y="64" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">EJEMPLO REFERENCIAL</text>
+  <text x="40" y="92" fill="#a9adb5" font-family="Arial, sans-serif" font-size="15">Ficha de eficiencia energética</text>
+  <rect x="40" y="120" width="260" height="30" rx="7" fill="#228b45"/>
+  <rect x="40" y="158" width="210" height="30" rx="7" fill="#d49b22"/>
+  <rect x="40" y="196" width="160" height="30" rx="7" fill="#b52b35"/>
+  <circle cx="382" cy="172" r="54" fill="none" stroke="#ffffff" stroke-width="7" opacity=".9"/>
+  <path d="M382 126v48l35 20" fill="none" stroke="#C8102E" stroke-width="7" stroke-linecap="round"/>
+  <text x="40" y="258" fill="#d7d9de" font-family="Arial, sans-serif" font-size="13">Usa esta imagen solo como referencia visual.</text>
+</svg>

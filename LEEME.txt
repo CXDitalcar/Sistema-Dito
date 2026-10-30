@@ -1,0 +1,84 @@
+DitalApp · Entrega B (09-10-2026)
+==================================
+
+Cómo subirlo a GitHub (sube una carpeta a la vez):
+Cada carpeta numerada se sube DENTRO de la carpeta del repositorio que indica.
+1. En GitHub, entra a la carpeta de destino (por ejemplo src/services).
+2. Pulsa "Add file" › "Upload files".
+3. Arrastra los ARCHIVOS que hay dentro de la carpeta numerada (no la carpeta).
+4. Pulsa "Commit changes".
+Repite con cada carpeta. Al final revisa que la Action termine en verde.
+
+01_api_src  →  subir en  api/src/
+      index.js
+      opsRoutes.js
+      segRoutes.js
+02_api_src_lib  →  subir en  api/src/lib/
+      appUsers.js
+      catalogoDatos.js
+      datosParsers.js
+      datosStore.js
+      frogmi.js
+      gespark.js
+      kpiSource.js
+      seguimiento.js
+      usersExcel.js
+      ventas.js
+03_src  →  subir en  src/
+      App.tsx
+04_src_components  →  subir en  src/components/
+      AcademiaRecursos.css
+      AcademiaRecursos.tsx
+      AgregarUsuario.tsx
+      FrogmiPendientes.tsx
+      GesparkPanel.tsx
+      SeguimientoPendientes.tsx
+      Shell.tsx
+05_src_data  →  subir en  src/data/
+      requestCatalogV2.ts
+      requestConfig.ts
+06_src_pages  →  subir en  src/pages/
+      Academia.tsx
+      Aprobaciones.tsx
+      Datos.tsx
+      Frogmi.tsx
+      Gestion.tsx
+      Home.tsx
+      KPI.css
+      KPI.tsx
+      NuevaSolicitud.tsx
+      Ops.css
+      Seguimiento.css
+      Seguimiento.tsx
+      SeguimientoMacro.tsx
+      SolicitudDetalle.tsx
+      Solicitudes.tsx
+      Ventas.tsx
+07_src_services  →  subir en  src/services/
+      catalogoApi.ts
+      datosApi.ts
+      kpiApi.ts
+      localesStore.ts
+      opsApi.ts
+      requestCatalog.ts
+      seguimientoApi.ts
+
+Importante: 07_src_services va en src/services. Es la carpeta que GitHub
+omitió en las entregas anteriores; súbela sola y confirma que aparezcan los
+7 archivos con fecha de hoy.
+
+Qué incluye:
+- Ventas (menú para todos): línea de tiempo de cada NV sin datos del cliente,
+  búsqueda por NV, VIN o mini VIN y alertas ("debería haber llegado", sin VIN,
+  falta confirmar entrega). El junior ve además sus 4 formularios Frogmi.
+- Frogmi (Gestión › Frogmi; menú propio para junior y jefatura de local):
+  junior según notificados, Entrega por vendedor (sorteo ≥80%), Tour Manager,
+  lectura operativa ajustada, cruces de VIN por aprobar, locales activos por
+  corte, buscador por mini VIN y evolutivo junio–septiembre.
+- Gespark en Datos: extranet + planilla T, evolutivo abril–septiembre, aviso
+  si la extranet no cubre el mes y fechas ilegibles de la T para revisar.
+- Datos: nuevas cargas "Informe de Notificación de Venta", "Frogmi (data 2)"
+  y "Extranet transportista".
+- Seguimiento macro (totales sin clientes) para quienes no ven el detalle.
+- Parte 1 de la Entrega B: recursos en Academia, asistente de gerencia,
+  solicitudes sugeridas, importar usuarios, locales, KPI con 4 opciones.

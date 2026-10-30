@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <rect width="480" height="300" rx="24" fill="#111317"/>
+  <rect x="18" y="18" width="444" height="264" rx="18" fill="#171a20" stroke="#C8102E" stroke-width="2"/>
+  <text x="40" y="64" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="700">EJEMPLO REFERENCIAL</text>
+  <text x="40" y="92" fill="#a9adb5" font-family="Arial, sans-serif" font-size="15">Elemento de seguridad opcional</text>
+  <path d="M240 116l68 24v49c0 44-28 72-68 88-40-16-68-44-68-88v-49z" fill="#20242c" stroke="#ffffff" stroke-width="6"/>
+  <path d="M208 190l21 21 46-54" fill="none" stroke="#C8102E" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="258" fill="#d7d9de" font-family="Arial, sans-serif" font-size="13">Foto real podrá reemplazar este ejemplo más adelante.</text>
+</svg>
