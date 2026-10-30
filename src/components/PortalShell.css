@@ -1,0 +1,28 @@
+/* Marco del inicio por tarjetas (perfiles distintos de Experiencia/PM) */
+.portal-shell{min-height:100vh;background:radial-gradient(circle at 80% -10%,rgba(225,38,47,.12),transparent 40%),#0b0b0e;color:#f2f2f4}
+.portal-viewas{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;padding:8px 16px;background:#2a1013;border-bottom:1px solid #6b1c21;font-size:13px;color:#ffd5d7}
+.portal-viewas select{min-height:34px;border-radius:8px;border:1px solid #6b1c21;background:#160a0c;color:#fff;padding:0 8px;font:inherit;max-width:100%}
+.portal-topbar{position:sticky;top:0;z-index:20;background:rgba(11,11,14,.92);backdrop-filter:blur(10px);border-bottom:1px solid #1f1f25}
+.portal-topbar-inner{max-width:1120px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.portal-brand{text-decoration:none;color:inherit}
+.portal-back{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid #2c2c33;color:#fff;text-decoration:none;font-weight:700;font-size:15px}
+.portal-back:hover{border-color:#e1262f}
+.portal-actions{display:flex;align-items:center;gap:8px}
+.portal-action{position:relative;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid transparent;background:transparent;color:#d4d4da;text-decoration:none;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.portal-action:hover{border-color:#2c2c33;color:#fff}
+.portal-count{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#e1262f;color:#fff;font-size:11px;line-height:20px;text-align:center}
+.portal-avatar{width:30px;height:30px;border-radius:50%;background:#2a1013;border:1px solid #6b1c21;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff}
+.portal-account{position:relative}
+.portal-account-menu{position:absolute;right:0;top:calc(100% + 6px);min-width:240px;padding:10px;border:1px solid #2c2c33;border-radius:12px;background:#141418;box-shadow:0 18px 40px rgba(0,0,0,.45);display:grid;gap:8px}
+.portal-account-card{display:flex;gap:10px;padding:8px;color:#d4d4da}
+.portal-account-card strong{display:block;color:#fff}
+.portal-account-card span,.portal-account-card small{display:block;font-size:13px;color:#a6a6ae}
+.portal-logout{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border-radius:10px;border:1px solid #2c2c33;background:#1b1b20;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.portal-logout:hover{border-color:#e1262f}
+.portal-main{max-width:1120px;margin:0 auto;padding:20px 16px 60px}
+@media (max-width:560px){.portal-action-label{display:none}.portal-topbar-inner{min-height:56px}}
+.portal-product-brand{display:flex;align-items:center;gap:12px}
+.portal-product-brand img{height:22px;width:auto}
+.portal-product-brand span{width:1px;height:26px;background:#3a3a42}
+.portal-product-brand strong{font-size:17px;letter-spacing:-.01em;color:#fff;white-space:nowrap}
+@media (max-width:560px){.portal-product-brand img{height:17px}.portal-product-brand strong{font-size:15px}}

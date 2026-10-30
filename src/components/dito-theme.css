@@ -1,0 +1,22 @@
+/* DITO · ajustes manuales del tema crema (se cargan después de dito-theme.generated.css). */
+@import "./ditalcar-theme.css";
+.app-shell.theme-dito{
+  --line:#E6E1C6;--muted:#7a7565;--red:#9D202F;
+  --dc-rojo:#9D202F;--dc-negro:#1E1E1E;--dc-crema:#FFFEF1;--dc-arena:#CAC59D;--dc-linea:#E6E1C6;--dc-fila:#FAF8E6;--dc-texto-suave:#5f5a4e;
+  --dito-canvas:#FFFEF1;--dito-side:#F3EFD9;
+  background:var(--dito-canvas);color:#1E1E1E;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+body:has(.theme-dito){background:#FFFEF1;color:#1E1E1E}
+.theme-dito h1,.theme-dito h2,.theme-dito h3{font-family:Montserrat,Inter,sans-serif;font-weight:600;letter-spacing:-.01em}
+.theme-dito .app-sidebar{background:var(--dito-side);border-right:1px solid #E6E1C6;box-shadow:none}
+.theme-dito .brand-logo,.theme-dito .app-sidebar-brand img,.theme-dito .app-mobile-brand img{filter:brightness(0)}
+.theme-dito .eyebrow{color:#9D202F}
+.theme-dito ::placeholder{color:#8b8573}
+.theme-dito input,.theme-dito select,.theme-dito textarea{color:#1E1E1E}
+.theme-dito .app-sidebar-link-active{background:#9D202F;color:#FFFEF1;border-color:#9D202F}
+.theme-dito .app-sidebar-link-active .app-sidebar-link-text,.theme-dito .app-sidebar-link-active .app-sidebar-link-icon,.theme-dito .app-sidebar-link-active svg{color:#FFFEF1}
+.theme-dito .app-sidebar-link-count{background:#9D202F;color:#FFFEF1}
+.theme-dito .dadm-head h1{color:#1E1E1E}
+.theme-dito .dadm-head p,.theme-dito .dadm-eyebrow{color:#5f5a4e}
+.theme-dito .dadm-card{background:#fff;border:1px solid #E6E1C6;border-top:4px solid #9D202F}

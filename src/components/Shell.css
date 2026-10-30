@@ -1,0 +1,718 @@
+/* ======================================================
+   DITALAPP
+   SHELL GENERAL
+====================================================== */
+
+.app-shell {
+  --sidebar-width: 264px;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 75% 15%,
+      rgba(160, 0, 20, 0.07),
+      transparent 28%
+    ),
+    #080809;
+
+  color: #ffffff;
+}
+
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.app-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+
+  width: var(--sidebar-width);
+
+  padding: 22px 16px 18px;
+
+  border-right:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  background:
+    linear-gradient(
+      180deg,
+      #080809 0%,
+      #0c0c0e 58%,
+      #080809 100%
+    );
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+/* ======================================================
+   BRAND
+====================================================== */
+
+.app-sidebar-brand {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 58px;
+
+  margin-bottom: 24px;
+  padding: 0 4px 18px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.app-sidebar-brand img {
+  max-width: 210px;
+  height: auto;
+}
+
+/* "DitalApp · Portal interno Ditalcar" en una sola línea junto al logo. */
+.app-sidebar-brand .brand-copy span {
+  white-space: nowrap;
+}
+
+
+.app-sidebar-close {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+
+/* ======================================================
+   NAVEGACIÓN
+====================================================== */
+
+.app-sidebar-nav {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 0;
+}
+
+
+.app-sidebar-section-label {
+  margin:
+    0
+    8px
+    9px;
+
+  color: #5f5f65;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+.app-sidebar-links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.app-sidebar-management {
+  margin-top: 27px;
+}
+
+
+.app-sidebar-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  width: 100%;
+  min-height: 43px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid
+    transparent;
+
+  border-radius: 11px;
+
+  box-sizing: border-box;
+
+  color: #8d8d92;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
+}
+
+
+.app-sidebar-link:hover {
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  border-color:
+    rgba(255, 255, 255, 0.055);
+
+  color: #ffffff;
+
+  transform:
+    translateX(1px);
+}
+
+
+.app-sidebar-link-icon {
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  width: 22px;
+
+  color: #76767c;
+
+  transition:
+    color 0.16s ease;
+}
+
+
+.app-sidebar-link-text {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.app-sidebar-link-active {
+  border-color:
+    rgba(227, 23, 47, 0.18);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(227, 23, 47, 0.15),
+      rgba(227, 23, 47, 0.035)
+    );
+
+  color: #ffffff;
+}
+
+
+.app-sidebar-link-active::before {
+  content: "";
+
+  position: absolute;
+
+  left: -1px;
+  top: 9px;
+  bottom: 9px;
+
+  width: 2px;
+
+  border-radius: 0 2px 2px 0;
+
+  background: #e3172f;
+
+  box-shadow:
+    0 0 12px
+    rgba(227, 23, 47, 0.55);
+}
+
+
+.app-sidebar-link-active
+.app-sidebar-link-icon {
+  color: #ef2e45;
+}
+
+
+/* ======================================================
+   USUARIO
+====================================================== */
+
+.app-sidebar-user {
+  margin-top: 24px;
+  padding-top: 16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.app-demo-badge {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 11px;
+
+  padding: 5px 8px;
+
+  border:
+    1px solid
+    rgba(227, 23, 47, 0.16);
+
+  border-radius: 999px;
+
+  background:
+    rgba(227, 23, 47, 0.065);
+
+  color: #eb7b88;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  white-space: nowrap;
+}
+
+
+.app-user-card {
+  display: grid;
+
+  grid-template-columns:
+    38px
+    minmax(0, 1fr);
+
+  gap: 10px;
+
+  align-items: center;
+}
+
+
+.app-user-avatar {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border:
+    1px solid
+    rgba(227, 23, 47, 0.2);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(227, 23, 47, 0.19),
+      rgba(227, 23, 47, 0.055)
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 850;
+}
+
+
+.app-user-data {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  gap: 2px;
+}
+
+
+.app-user-data strong {
+  overflow: hidden;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.app-user-data span {
+  overflow: hidden;
+
+  color: #8b8b90;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.app-user-data small {
+  overflow: hidden;
+
+  color: #5f5f65;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.app-demo-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  width: 100%;
+  min-height: 36px;
+
+  margin-top: 13px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.075);
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  color: #9b9ba0;
+
+  font-family: inherit;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.16s ease,
+    border-color 0.16s ease,
+    background 0.16s ease;
+}
+
+
+.app-demo-logout:hover {
+  border-color:
+    rgba(227, 23, 47, 0.25);
+
+  background:
+    rgba(227, 23, 47, 0.055);
+
+  color: #ffffff;
+}
+
+
+/* ======================================================
+   MAIN
+====================================================== */
+
+.app-main {
+  width:
+    calc(
+      100% -
+      var(--sidebar-width)
+    );
+
+  min-height: 100vh;
+
+  margin-left:
+    var(--sidebar-width);
+
+  box-sizing: border-box;
+}
+
+
+.app-main-content {
+  width: 100%;
+
+  padding:
+    30px
+    34px
+    50px;
+
+  box-sizing: border-box;
+}
+
+
+/* ======================================================
+   HEADER MÓVIL
+====================================================== */
+
+.app-mobile-header {
+  display: none;
+}
+
+
+/* ======================================================
+   OVERLAY
+====================================================== */
+
+.app-sidebar-overlay {
+  display: none;
+}
+
+
+/* ======================================================
+   TABLET
+====================================================== */
+
+@media (
+  max-width: 1024px
+) {
+  .app-shell {
+    --sidebar-width:
+      236px;
+  }
+
+
+  .app-main-content {
+    padding:
+      26px
+      24px
+      44px;
+  }
+}
+
+
+/* ======================================================
+   MÓVIL
+====================================================== */
+
+@media (
+  max-width: 820px
+) {
+  .app-shell {
+    --sidebar-width:
+      268px;
+  }
+
+
+  .app-sidebar {
+    transform:
+      translateX(-105%);
+
+    box-shadow:
+      22px 0 65px
+      rgba(0, 0, 0, 0.5);
+
+    transition:
+      transform 0.22s ease;
+  }
+
+
+  .app-sidebar-open {
+    transform:
+      translateX(0);
+  }
+
+
+  .app-sidebar-close {
+    display: flex;
+  }
+
+
+  .app-main {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+
+  .app-mobile-header {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 70;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    min-height: 64px;
+
+    padding: 0 18px;
+
+    border-bottom:
+      1px solid
+      rgba(255, 255, 255, 0.065);
+
+    background:
+      rgba(8, 8, 9, 0.94);
+
+    backdrop-filter:
+      blur(18px);
+  }
+
+
+  .app-mobile-menu-button {
+    display: grid;
+    place-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    flex: 0 0 auto;
+
+    border:
+      1px solid
+      rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    background:
+      rgba(255, 255, 255, 0.035);
+
+    color: #ffffff;
+
+    cursor: pointer;
+  }
+
+
+  .app-mobile-brand {
+    min-width: 0;
+  }
+
+
+  .app-mobile-brand img {
+    max-width: 190px;
+    height: auto;
+  }
+
+
+  .app-sidebar-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 90;
+
+    display: block;
+
+    border: 0;
+
+    background:
+      rgba(0, 0, 0, 0.7);
+
+    backdrop-filter:
+      blur(3px);
+
+    cursor: pointer;
+  }
+
+
+  .app-main-content {
+    padding:
+      22px
+      18px
+      38px;
+  }
+}
+
+
+/* ======================================================
+   TELÉFONO PEQUEÑO
+====================================================== */
+
+@media (
+  max-width: 480px
+) {
+  .app-shell {
+    --sidebar-width:
+      min(
+        286px,
+        86vw
+      );
+  }
+
+
+  .app-sidebar {
+    padding:
+      19px
+      14px
+      16px;
+  }
+
+
+  .app-main-content {
+    padding:
+      18px
+      14px
+      34px;
+  }
+}
+
+/* ======================================================
+   PILOTO · VER COMO (solo Experiencia)
+====================================================== */
+.app-view-as{display:grid;gap:6px;margin-bottom:10px;padding:10px;border:1px solid rgba(200,16,46,.22);border-radius:10px;background:rgba(200,16,46,.055)}
+.app-view-as>span{font-size:9px;font-weight:900;letter-spacing:.12em;color:#ef5a67}
+.app-view-as select{width:100%;min-width:0;border:1px solid #303038;border-radius:8px;background:#0d0d10;color:#fff;padding:8px 9px;font-size:9px;outline:none}
+.app-view-as select:focus{border-color:rgba(200,16,46,.58)}
+.app-view-as small{font-size:8px;line-height:1.35;color:#74747e}
+
+/* ======================================================
+   BADGES DE NAVEGACIÓN · PILOTO
+====================================================== */
+.app-sidebar-link-text{min-width:0}
+.app-sidebar-link-badge{margin-left:auto;flex:0 0 auto;padding:4px 6px;border:1px solid rgba(243,168,59,.28);border-radius:999px;background:rgba(243,168,59,.08);color:#f3bd6b;font-size:7px;font-weight:900;letter-spacing:.05em;white-space:nowrap}
+/* Avisos del menú (09-10) */
+.app-sidebar-link-count{margin-left:auto;flex:0 0 auto;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#e1262f;color:#fff;font-size:11px;font-weight:800;line-height:20px;text-align:center;white-space:nowrap}
+.app-mobile-menu-button{position:relative}
+.app-mobile-menu-dot{position:absolute;top:6px;right:6px;width:9px;height:9px;border-radius:50%;background:#e1262f;box-shadow:0 0 0 2px #0d0d10}

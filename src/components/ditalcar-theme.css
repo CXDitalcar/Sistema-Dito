@@ -1,0 +1,169 @@
+/* =====================================================================
+   Branding DITALCAR (Identidad Visual 2025) para interfaces separadas
+   como "Gestión de Showroom". Misma estructura, colores de marca:
+   burdeos de fondo, crema en superficies, rojo Scarlet Sage de acento,
+   Montserrat SemiBold en títulos e Inter en textos.
+   ===================================================================== */
+@font-face { font-family: "Montserrat"; src: url("/assets/Montserrat-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("/assets/Inter-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+
+.theme-ditalcar, .auth-ditalcar {
+  --dc-rojo: #9D202F;
+  --dc-rojo-hover: #86192a;
+  --dc-negro: #1E1E1E;
+  --dc-burdeos: #28090A;
+  --dc-crema: #FFFEF1;
+  --dc-arena: #CAC59D;
+  --dc-tierra: #B7997B;
+  --dc-texto-suave: #5f5a4e;
+  --dc-linea: #e6e1c6;
+  --dc-fila: #faf8e6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.theme-ditalcar h1, .theme-ditalcar h2, .theme-ditalcar h3, .theme-ditalcar strong.dc-title,
+.auth-ditalcar h1 { font-family: Montserrat, Inter, sans-serif; font-weight: 600; letter-spacing: -0.01em; }
+
+/* ---------- Marco ---------- */
+.portal-shell.theme-ditalcar { background: var(--dc-burdeos); color: var(--dc-crema); }
+.theme-ditalcar .portal-topbar { background: var(--dc-crema); border-bottom: 0; border-top: 4px solid var(--dc-rojo); backdrop-filter: none; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); }
+.theme-ditalcar .portal-product-brand img { height: 30px; }
+.theme-ditalcar .portal-product-brand span { background: var(--dc-arena); }
+.theme-ditalcar .portal-product-brand strong { color: var(--dc-negro); font-family: Montserrat, Inter, sans-serif; font-weight: 600; }
+.theme-ditalcar .portal-action { color: var(--dc-negro); }
+.theme-ditalcar .portal-action:hover { border-color: var(--dc-arena); color: var(--dc-negro); }
+.theme-ditalcar .portal-count, .theme-ditalcar .portal-pill { background: var(--dc-rojo); color: var(--dc-crema); }
+.theme-ditalcar .portal-avatar { background: var(--dc-rojo); border-color: var(--dc-rojo); color: var(--dc-crema); }
+.theme-ditalcar .portal-back { color: var(--dc-negro); border-color: var(--dc-arena); }
+.theme-ditalcar .portal-back:hover { border-color: var(--dc-rojo); }
+.theme-ditalcar .portal-account-menu { background: var(--dc-crema); border-color: var(--dc-arena); }
+.theme-ditalcar .portal-account-card { color: var(--dc-texto-suave); }
+.theme-ditalcar .portal-account-card strong { color: var(--dc-negro); }
+.theme-ditalcar .portal-account-card span, .theme-ditalcar .portal-account-card small { color: var(--dc-texto-suave); }
+.theme-ditalcar .portal-logout { background: var(--dc-fila); border-color: var(--dc-arena); color: var(--dc-negro); }
+.theme-ditalcar .portal-logout:hover { border-color: var(--dc-rojo); }
+.theme-ditalcar .portal-viewas { background: var(--dc-rojo); border-color: var(--dc-rojo); color: var(--dc-crema); }
+.theme-ditalcar .portal-viewas select { background: var(--dc-crema); color: var(--dc-negro); border-color: var(--dc-crema); }
+
+/* ---------- Saludo y títulos sobre burdeos ---------- */
+.theme-ditalcar .portal-hello h1 { color: var(--dc-crema); }
+.theme-ditalcar .portal-hello p { color: var(--dc-arena); }
+.theme-ditalcar .portal-section > .portal-section-head h2 { color: var(--dc-crema); }
+.theme-ditalcar .portal-section > .portal-section-head p { color: var(--dc-arena); }
+.theme-ditalcar .showroom-group h3 { color: var(--dc-arena); }
+.theme-ditalcar .portal-section > .portal-empty { color: var(--dc-crema); }
+
+/* ---------- Pestañas ---------- */
+.theme-ditalcar .showroom-tabs { background: var(--dc-crema); border-color: var(--dc-crema); top: 76px; }
+.theme-ditalcar .showroom-tabs button { color: var(--dc-texto-suave); }
+.theme-ditalcar .showroom-tabs button.active { background: var(--dc-rojo); border-color: var(--dc-rojo); color: var(--dc-crema); }
+.theme-ditalcar .showroom-tabs b { background: var(--dc-crema); color: var(--dc-rojo); }
+.theme-ditalcar .showroom-tabs button:not(.active) b { background: var(--dc-rojo); color: var(--dc-crema); }
+
+/* ---------- Superficies crema ---------- */
+.theme-ditalcar .portal-today,
+.theme-ditalcar .seg-card,
+.theme-ditalcar .showroom-process,
+.theme-ditalcar .showroom-list a,
+.theme-ditalcar .showroom-form-card,
+.theme-ditalcar .portal-tile {
+  background: var(--dc-crema);
+  border-color: var(--dc-crema);
+  color: var(--dc-negro);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+.theme-ditalcar .portal-today { border-top: 4px solid var(--dc-rojo); }
+.theme-ditalcar .portal-today .portal-section-head h2 { color: var(--dc-negro); }
+.theme-ditalcar .portal-today .portal-empty { color: #2f6b45; }
+.theme-ditalcar .portal-empty.muted { color: var(--dc-texto-suave); }
+.theme-ditalcar .portal-section > .portal-empty.muted { color: var(--dc-arena); }
+
+.theme-ditalcar .portal-todo a { background: var(--dc-fila); border-color: var(--dc-linea); color: var(--dc-negro); }
+.theme-ditalcar .portal-todo a:hover,
+.theme-ditalcar .showroom-process:hover,
+.theme-ditalcar .showroom-list a:hover,
+.theme-ditalcar a.showroom-form-card:hover { border-color: var(--dc-rojo); }
+.theme-ditalcar .portal-todo-text small,
+.theme-ditalcar .showroom-list-main small,
+.theme-ditalcar .showroom-process small,
+.theme-ditalcar .showroom-form-text small { color: var(--dc-texto-suave); }
+.theme-ditalcar .showroom-stage { color: var(--dc-negro); }
+.theme-ditalcar .showroom-process svg,
+.theme-ditalcar .portal-tile-icon { color: var(--dc-rojo); }
+.theme-ditalcar .portal-tile-icon { background: #f6e7e2; }
+.theme-ditalcar .portal-more { color: var(--dc-negro); border-color: var(--dc-arena); }
+.theme-ditalcar .portal-more:hover { border-color: var(--dc-rojo); }
+
+/* Tiles de resumen */
+.theme-ditalcar .macro-tile span { color: var(--dc-texto-suave); }
+.theme-ditalcar .macro-tile strong { color: var(--dc-negro); font-family: Montserrat, Inter, sans-serif; }
+.theme-ditalcar .macro-tile.good strong { color: #2f6b45; }
+.theme-ditalcar .macro-tile.bad strong { color: var(--dc-rojo); }
+.theme-ditalcar .macro-tile small { color: var(--dc-texto-suave); }
+
+/* Filtros y botones */
+.theme-ditalcar .showroom-filter button { color: var(--dc-crema); border-color: rgba(255, 254, 241, 0.35); }
+.theme-ditalcar .showroom-filter button.active { background: var(--dc-crema); border-color: var(--dc-crema); color: var(--dc-rojo); }
+.theme-ditalcar .showroom-cta { background: var(--dc-rojo); color: var(--dc-crema); }
+.theme-ditalcar .showroom-cta:hover { background: var(--dc-rojo-hover); }
+.theme-ditalcar .showroom-cta small { color: #f5dcd9; }
+.theme-ditalcar .seg-btn { background: var(--dc-crema); border-color: var(--dc-crema); color: var(--dc-negro); }
+.theme-ditalcar .seg-btn:hover { border-color: var(--dc-rojo); }
+.theme-ditalcar .seg-btn.primary { background: var(--dc-rojo); border-color: var(--dc-rojo); color: var(--dc-crema); }
+
+/* Semana de la Ruta */
+.theme-ditalcar .showroom-week li { color: var(--dc-texto-suave); }
+.theme-ditalcar .showroom-week li.done { color: #2f6b45; }
+.theme-ditalcar .showroom-week li.done strong, .theme-ditalcar .showroom-week li strong { color: var(--dc-negro); }
+.theme-ditalcar .showroom-week-dot { border-color: var(--dc-tierra); }
+.theme-ditalcar .showroom-week-note { color: var(--dc-texto-suave); }
+
+/* Otros formularios (Frogmi) */
+.theme-ditalcar .showroom-form-link { color: var(--dc-negro); }
+.theme-ditalcar .showroom-accounts { border-top-color: var(--dc-linea); }
+.theme-ditalcar .showroom-accounts-title { color: var(--dc-texto-suave); }
+.theme-ditalcar .showroom-account { background: var(--dc-fila); border: 1px solid var(--dc-linea); }
+.theme-ditalcar .showroom-copy small { color: var(--dc-texto-suave); }
+.theme-ditalcar .showroom-copy code { color: var(--dc-negro); }
+.theme-ditalcar .showroom-copy button { border-color: var(--dc-arena); color: var(--dc-negro); }
+.theme-ditalcar .showroom-copy button:hover { border-color: var(--dc-rojo); color: var(--dc-rojo); }
+
+/* ---------- Ingreso ---------- */
+.auth-page.auth-ditalcar { background: var(--dc-burdeos); }
+.auth-ditalcar .auth-card { background: var(--dc-crema); color: var(--dc-negro); border: 0; border-top: 6px solid var(--dc-rojo); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35); }
+.auth-ditalcar .auth-brand-logo { display: block; width: min(260px, 80%); height: auto; margin: 6px auto 10px; }
+.auth-ditalcar .auth-title span { color: var(--dc-rojo); }
+.auth-ditalcar .auth-title h1 { color: var(--dc-negro); }
+.auth-ditalcar .auth-title p { color: var(--dc-texto-suave); }
+.auth-ditalcar .auth-pilot-banner { background: var(--dc-fila); border-color: var(--dc-linea); color: var(--dc-texto-suave); }
+.auth-ditalcar .auth-pilot-banner strong { color: var(--dc-negro); }
+.auth-ditalcar .auth-pilot-banner svg { color: var(--dc-rojo); }
+.auth-ditalcar label, .auth-ditalcar label > span { color: var(--dc-negro); }
+.auth-ditalcar .auth-input { background: #ffffff; border-color: var(--dc-arena); color: var(--dc-texto-suave); }
+.auth-ditalcar .auth-input:focus-within { border-color: var(--dc-rojo); color: var(--dc-rojo); }
+.auth-ditalcar .auth-input input { color: var(--dc-negro); }
+.auth-ditalcar .auth-input input::placeholder { color: #9a9483; }
+.auth-ditalcar .auth-form label > span, .auth-ditalcar .auth-form span { color: var(--dc-texto-suave); }
+.auth-ditalcar .auth-pilot-banner span { color: var(--dc-texto-suave); }
+.auth-ditalcar .auth-primary { background: var(--dc-rojo); color: var(--dc-crema); box-shadow: none; }
+.auth-ditalcar .auth-primary:hover { background: var(--dc-rojo-hover); }
+.auth-ditalcar .auth-links, .auth-ditalcar .auth-links a, .auth-ditalcar .auth-links button,
+.auth-ditalcar .auth-back, .auth-ditalcar .auth-pilot-toggle { color: var(--dc-rojo); }
+.auth-ditalcar .auth-message { color: var(--dc-negro); }
+
+/* Tarjetas de acceso (portal-tile) sobre crema */
+.theme-ditalcar .portal-tile-link { color: var(--dc-negro); }
+.theme-ditalcar .portal-tile-text strong { color: var(--dc-negro); font-family: Montserrat, Inter, sans-serif; font-weight: 600; }
+.theme-ditalcar .portal-tile-text > span { color: var(--dc-texto-suave); }
+.theme-ditalcar .portal-tile-arrow { color: var(--dc-texto-suave); }
+.theme-ditalcar .portal-tile:hover { border-color: var(--dc-rojo); }
+.theme-ditalcar .portal-tile:hover .portal-tile-arrow { color: var(--dc-rojo); }
+
+/* Celular: logo y nombre del producto caben sin desbordar la barra */
+@media (max-width:560px){
+  .theme-ditalcar .portal-product-brand{gap:8px;min-width:0}
+  .theme-ditalcar .portal-product-brand img{height:20px}
+  .theme-ditalcar .portal-product-brand span{height:20px}
+  .theme-ditalcar .portal-product-brand strong{font-size:13px;white-space:normal;line-height:1.15;max-width:110px}
+  .theme-ditalcar .portal-action{padding:0 8px}
+  .theme-ditalcar .portal-actions{gap:2px}
+}

@@ -1,0 +1,169 @@
+.demo-login{
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px solid #29292f;
+  text-align:left;
+}
+
+.demo-login-head{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  margin-bottom:16px;
+}
+
+.demo-login-icon{
+  width:39px;
+  height:39px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border-radius:10px;
+  color:#ff4a53;
+  background:rgba(225,38,47,.10);
+  border:1px solid rgba(225,38,47,.20);
+}
+
+.demo-login-head div:last-child{
+  display:grid;
+  gap:2px;
+}
+
+.demo-login-head strong{
+  font-size:13px;
+}
+
+.demo-login-head span{
+  color:#888892;
+  font-size:10px;
+}
+
+.demo-user-select{
+  display:grid;
+  gap:6px;
+}
+
+.demo-user-select>span{
+  color:#9797a1;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.demo-user-select select{
+  width:100%;
+  padding:11px 12px;
+  border:1px solid #303037;
+  border-radius:10px;
+  outline:none;
+  background:#111114;
+  color:#fff;
+}
+
+.demo-user-select select:focus{
+  border-color:rgba(225,38,47,.65);
+}
+
+.demo-user-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:12px;
+  padding:13px;
+  border:1px solid #29292f;
+  border-radius:12px;
+  background:#121215;
+}
+
+.demo-user-avatar{
+  width:41px;
+  height:41px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border-radius:50%;
+  background:rgba(225,38,47,.10);
+  color:#ff5159;
+}
+
+.demo-user-data{
+  min-width:0;
+  display:grid;
+  gap:2px;
+}
+
+.demo-user-data strong{
+  font-size:12px;
+}
+
+.demo-user-data span{
+  color:#aaaab3;
+  font-size:10px;
+}
+
+.demo-user-data small{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  margin-top:3px;
+  color:#777781;
+  font-size:9px;
+}
+
+.demo-enter-btn{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin-top:12px;
+  padding:11px 14px;
+  border:1px solid rgba(225,38,47,.35);
+  border-radius:10px;
+  background:rgba(225,38,47,.09);
+  color:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.demo-enter-btn:hover{
+  background:rgba(225,38,47,.16);
+  border-color:rgba(225,38,47,.60);
+}
+
+.demo-warning{
+  display:block;
+  margin-top:9px;
+  text-align:center;
+  color:#62626c;
+  font-size:9px;
+  line-height:1.45;
+}
+
+.demo-seller-fields{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:12px;
+}
+
+.demo-user-select input{
+  width:100%;
+  box-sizing:border-box;
+  padding:11px 12px;
+  border:1px solid #303037;
+  border-radius:10px;
+  outline:none;
+  background:#111114;
+  color:#fff;
+}
+
+.demo-user-select input:focus{
+  border-color:rgba(225,38,47,.65);
+}
+
+@media (max-width:640px){
+  .demo-seller-fields{
+    grid-template-columns:1fr;
+  }
+}
