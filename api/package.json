@@ -1,0 +1,20 @@
+{
+  "name": "ditalcar-auth-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "func start",
+    "check": "node --check src/index.js"
+  },
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "@azure/functions": "^4.7.2",
+    "@azure/storage-blob": "^12.28.0",
+    "bcryptjs": "^2.4.3",
+    "exceljs": "^4.4.0",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "4.10.38"
+  }
+}
