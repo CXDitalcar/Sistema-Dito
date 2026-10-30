@@ -1,0 +1,24 @@
+.dadm-page{--c-rojo:#9D202F;--c-negro:#1E1E1E;--c-crema:#FFFEF1;--c-arena:#CAC59D;--c-suave:#5f5a4e;--c-linea:#e6e1c6;display:grid;gap:16px;max-width:980px;margin:0 auto;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:var(--c-negro)}
+.dadm-head h1{margin:6px 0 4px;color:#FFFEF1;font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:clamp(24px,3.4vw,32px)}
+.dadm-head p{margin:0;color:#CAC59D}
+.dadm-eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:#CAC59D}
+.dadm-card{background:var(--c-crema);color:var(--c-negro);border-radius:16px;padding:20px;display:grid;gap:12px;border-top:4px solid var(--c-rojo)}
+.dadm-card h2{margin:0;font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:19px}
+.dadm-card p{margin:0;color:var(--c-suave)}
+.dadm-card small{color:var(--c-suave)}
+.dadm-row,.dadm-step{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.dadm-step input,.dadm-row input[type=date],.dadm-form input,.dadm-form select{min-height:38px;padding:0 10px;border:1px solid var(--c-arena);border-radius:10px;background:#fff;font:inherit;color:var(--c-negro)}
+.dadm-btn,.dadm-file{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--c-rojo);background:var(--c-rojo);color:#fff;font:inherit;font-weight:600;cursor:pointer;display:inline-flex;align-items:center}
+.dadm-btn.ghost,.dadm-file{background:transparent;color:var(--c-rojo)}
+.dadm-btn.danger{background:#1E1E1E;border-color:#1E1E1E}
+.dadm-btn:disabled{opacity:.45;cursor:not-allowed}
+.dadm-file input{display:none}
+.dadm-pill{padding:4px 12px;border-radius:999px;font-weight:700;font-size:13px}
+.dadm-pill.on{background:#dff1e5;color:#2f6b45}.dadm-pill.off{background:#eee9cf;color:var(--c-suave)}
+.dadm-list{margin:0;padding-left:18px;display:grid;gap:4px}
+.dadm-ok{color:#2f6b45!important;font-weight:600}.dadm-err{color:var(--c-rojo)!important;font-weight:600}
+.dadm-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;align-items:end}
+.dadm-form label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--c-suave)}
+.dadm-form .wide{grid-column:1/-1}
+.dadm-table{width:100%;border-collapse:collapse;font-size:14px}
+.dadm-table th,.dadm-table td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--c-linea)}

@@ -1,0 +1,735 @@
+/* ======================================================
+   DITALAPP
+   DETALLE SOLICITUD
+====================================================== */
+
+.request-detail-page{
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.request-detail-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+  margin:18px 0 17px;
+}
+
+.request-detail-header h1{
+  margin:5px 0 8px;
+}
+
+.request-detail-meta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  color:#8d8d97;
+  font-size:11px;
+}
+
+.request-detail-meta span{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+
+/* ======================================================
+   ESTADO
+====================================================== */
+
+.request-detail-status-wrap{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  flex-wrap:wrap;
+}
+
+.request-detail-status{
+  display:inline-flex;
+  padding:7px 10px;
+  border:1px solid #303037;
+  border-radius:999px;
+  font-size:9px;
+  font-weight:800;
+}
+
+.status-pendiente_aprobacion{
+  color:#ff6c73;
+  background:rgba(225,38,47,.08);
+  border-color:rgba(225,38,47,.24);
+}
+
+.status-informacion_requerida{
+  color:#91afff;
+  background:rgba(71,113,220,.08);
+  border-color:rgba(71,113,220,.22);
+}
+
+.status-aprobada,
+.status-aprobada_con_ajuste,
+.status-resuelta{
+  color:#68dc9c;
+  background:rgba(42,184,103,.08);
+  border-color:rgba(42,184,103,.22);
+}
+
+.status-en_gestion{
+  color:#c39aff;
+  background:rgba(145,82,218,.08);
+  border-color:rgba(145,82,218,.22);
+}
+
+.status-resuelta_por_confirmar{
+  color:#f4b653;
+  background:rgba(245,182,79,.08);
+  border-color:rgba(245,182,79,.22);
+}
+
+.status-rechazada{
+  color:#ff676e;
+  background:rgba(225,38,47,.08);
+  border-color:rgba(225,38,47,.22);
+}
+
+.request-reopened{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  color:#ff6970;
+  font-size:8px;
+  font-weight:800;
+}
+
+
+/* ======================================================
+   RESUMEN
+====================================================== */
+
+.request-detail-summary{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  overflow:hidden;
+  margin-bottom:17px;
+  border:1px solid #29292f;
+  border-radius:13px;
+  background:#29292f;
+  gap:1px;
+}
+
+.request-summary-item{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:14px;
+  background:#121215;
+}
+
+.request-summary-item>svg{
+  color:#ff4a53;
+}
+
+.request-summary-item>div{
+  display:grid;
+  gap:4px;
+}
+
+.request-summary-item span{
+  color:#70707a;
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+
+.request-summary-item strong{
+  color:#d7d7dc;
+  font-size:11px;
+}
+
+
+/* ======================================================
+   LAYOUT
+====================================================== */
+
+.request-detail-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 340px;
+  gap:17px;
+  align-items:start;
+}
+
+.request-detail-main{
+  display:grid;
+  gap:13px;
+}
+
+.request-detail-side{
+  display:grid;
+  gap:12px;
+  position:sticky;
+  top:88px;
+}
+
+
+/* ======================================================
+   TARJETAS
+====================================================== */
+
+.request-detail-card,
+.request-side-card{
+  border:1px solid #29292f;
+  border-radius:15px;
+  background:rgba(15,15,18,.95);
+}
+
+.request-detail-card{
+  padding:21px;
+}
+
+.request-side-card{
+  padding:19px;
+}
+
+.request-detail-card-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:17px;
+}
+
+.request-detail-card-head h2,
+.history-toggle h2{
+  margin:4px 0 0;
+  font-size:18px;
+}
+
+.request-detail-card-head>svg{
+  color:#ff4b54;
+}
+
+
+/* ======================================================
+   DATOS
+====================================================== */
+
+.request-data-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border:1px solid #29292f;
+  border-radius:11px;
+  overflow:hidden;
+}
+
+.request-data-field{
+  min-height:78px;
+  display:grid;
+  align-content:center;
+  gap:5px;
+  padding:14px;
+  border-right:1px solid #29292f;
+  border-bottom:1px solid #29292f;
+}
+
+.request-data-field:nth-child(even){
+  border-right:0;
+}
+
+.request-data-field span{
+  color:#70707a;
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+
+.request-data-field strong{
+  color:#e0e0e4;
+  font-size:13px;
+}
+
+.request-data-field small{
+  color:#67d799;
+  font-size:9px;
+}
+
+
+/* ======================================================
+   ADJUNTOS
+====================================================== */
+
+.request-no-files{
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding:13px;
+  border:1px dashed #303037;
+  border-radius:10px;
+  color:#5f5f68;
+}
+
+.request-no-files>div{
+  display:grid;
+  gap:3px;
+}
+
+.request-no-files strong{
+  color:#a7a7af;
+  font-size:11px;
+}
+
+.request-no-files span{
+  font-size:9px;
+}
+
+
+/* ======================================================
+   CONTROL PRIVADO
+====================================================== */
+
+.private-control{
+  border-color:rgba(225,38,47,.23);
+}
+
+.private-control-description{
+  margin:-4px 0 14px;
+  color:#777781;
+  font-size:10px;
+  line-height:1.5;
+}
+
+.private-check-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+}
+
+.private-check{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:13px;
+  text-align:left;
+  border:1px solid #303037;
+  border-radius:11px;
+  background:#111114;
+  color:#fff;
+  cursor:pointer;
+}
+
+.private-check>span{
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border:1px solid #3b3b42;
+  border-radius:7px;
+}
+
+.private-check>div{
+  display:grid;
+  gap:2px;
+}
+
+.private-check strong{
+  font-size:10px;
+}
+
+.private-check small{
+  color:#6f6f79;
+  font-size:8px;
+}
+
+.private-check.checked{
+  border-color:rgba(42,184,103,.35);
+}
+
+.private-check.checked>span{
+  color:#66d897;
+  background:rgba(42,184,103,.09);
+  border-color:rgba(42,184,103,.35);
+}
+
+
+/* ======================================================
+   HISTORIAL
+====================================================== */
+
+.history-toggle{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#fff;
+  text-align:left;
+  cursor:pointer;
+}
+
+.request-history{
+  display:grid;
+  margin-top:17px;
+}
+
+.history-entry{
+  position:relative;
+  display:grid;
+  grid-template-columns:18px 1fr;
+  gap:8px;
+}
+
+.history-entry:not(:last-child)::before{
+  content:"";
+  position:absolute;
+  left:5px;
+  top:18px;
+  bottom:-5px;
+  width:1px;
+  background:#303037;
+}
+
+.history-dot{
+  width:11px;
+  height:11px;
+  margin-top:4px;
+  border:2px solid #676771;
+  border-radius:50%;
+  background:#151518;
+  z-index:1;
+}
+
+.history-content{
+  padding-bottom:18px;
+}
+
+.history-entry-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.history-entry-head strong{
+  font-size:11px;
+}
+
+.history-entry-head span{
+  color:#60606a;
+  font-size:8px;
+  white-space:nowrap;
+}
+
+.history-content p{
+  margin:5px 0;
+  color:#95959e;
+  font-size:10px;
+  line-height:1.5;
+}
+
+.history-content small{
+  color:#696973;
+  font-size:8px;
+}
+
+.history-success .history-dot{
+  border-color:#48c986;
+}
+
+.history-info .history-dot{
+  border-color:#779dff;
+}
+
+.history-danger .history-dot{
+  border-color:#ee4750;
+}
+
+.history-warning .history-dot{
+  border-color:#e9ac48;
+}
+
+
+/* ======================================================
+   PANEL DERECHO
+====================================================== */
+
+.request-side-card h3{
+  margin:6px 0 15px;
+  font-size:17px;
+}
+
+.request-side-row{
+  display:grid;
+  gap:3px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.request-side-row span{
+  color:#70707a;
+  font-size:8px;
+  text-transform:uppercase;
+}
+
+.request-side-row strong{
+  color:#d3d3d8;
+  font-size:10px;
+}
+
+.side-note{
+  color:#81818a;
+  font-size:10px;
+  line-height:1.5;
+}
+
+
+/* ======================================================
+   ACCIONES
+====================================================== */
+
+.approval-actions-card{
+  border-color:rgba(225,38,47,.22);
+}
+
+.request-action{
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:7px;
+  padding:10px 11px;
+  border:1px solid #303037;
+  border-radius:9px;
+  background:#141417;
+  color:#fff;
+  cursor:pointer;
+  font-size:10px;
+  font-weight:700;
+}
+
+.request-action.approve{
+  color:#79dda2;
+  border-color:rgba(42,184,103,.24);
+}
+
+.request-action.adjust{
+  color:#f1bc5e;
+  border-color:rgba(245,182,79,.22);
+}
+
+.request-action.information{
+  color:#91afff;
+  border-color:rgba(71,113,220,.22);
+}
+
+.request-action.reject{
+  color:#ff747b;
+  border-color:rgba(225,38,47,.22);
+}
+
+.request-action:hover{
+  background:#1a1a1e;
+}
+
+
+/* ======================================================
+   FORMULARIOS DE ACCIÓN
+====================================================== */
+
+.action-form{
+  display:grid;
+  gap:10px;
+  margin-top:13px;
+  padding-top:13px;
+  border-top:1px solid #29292f;
+}
+
+.action-form-title{
+  color:#dddde2;
+  font-size:11px;
+  font-weight:800;
+}
+
+.action-form label{
+  display:grid;
+  gap:5px;
+}
+
+.action-form label>span{
+  color:#aaaab3;
+  font-size:9px;
+}
+
+.action-form label>small{
+  color:#696973;
+  font-size:8px;
+}
+
+.action-form input,
+.action-form textarea{
+  width:100%;
+  border:1px solid #303037;
+  border-radius:8px;
+  outline:none;
+  background:#101013;
+  color:#fff;
+  padding:9px 10px;
+  font-size:10px;
+}
+
+.action-form textarea{
+  min-height:86px;
+  resize:vertical;
+}
+
+.action-form input:focus,
+.action-form textarea:focus{
+  border-color:rgba(225,38,47,.55);
+}
+
+.danger-btn{
+  width:100%;
+  padding:10px;
+  border:1px solid rgba(225,38,47,.36);
+  border-radius:9px;
+  background:rgba(225,38,47,.1);
+  color:#ff7077;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.danger-btn:disabled,
+.action-form .primary-btn:disabled{
+  opacity:.35;
+  cursor:not-allowed;
+}
+
+
+/* ======================================================
+   INFORMACIONES
+====================================================== */
+
+.confirmation-card,
+.rejected-card{
+  display:flex;
+  gap:10px;
+}
+
+.confirmation-card>svg{
+  flex:0 0 auto;
+  color:#f2b454;
+}
+
+.rejected-card>svg{
+  flex:0 0 auto;
+  color:#ff666d;
+}
+
+.confirmation-card strong,
+.rejected-card strong{
+  font-size:11px;
+}
+
+.confirmation-card p,
+.rejected-card p{
+  margin:5px 0 0;
+  color:#83838d;
+  font-size:9px;
+  line-height:1.5;
+}
+
+
+/* ======================================================
+   VACÍO
+====================================================== */
+
+.request-detail-empty{
+  min-height:340px;
+  display:grid;
+  align-content:center;
+  justify-items:center;
+  text-align:center;
+  color:#6f6f79;
+}
+
+.request-detail-empty h2{
+  margin:11px 0 4px;
+  color:#c7c7cd;
+}
+
+.request-detail-empty p{
+  margin:0;
+  font-size:10px;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:1050px){
+
+  .request-detail-layout{
+    grid-template-columns:1fr;
+  }
+
+  .request-detail-side{
+    position:static;
+  }
+
+  .request-detail-summary{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+@media(max-width:700px){
+
+  .request-detail-header{
+    display:grid;
+  }
+
+  .request-detail-summary{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .request-data-grid{
+    grid-template-columns:1fr;
+  }
+
+  .request-data-field{
+    border-right:0;
+  }
+
+  .private-check-list{
+    grid-template-columns:1fr;
+  }
+
+  .history-entry-head{
+    display:grid;
+    gap:3px;
+  }
+
+}
+
+.request-user-action{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:12px;margin:14px 0;padding:14px 16px;border:1px solid #2c2c33;border-radius:13px;background:#101014}.request-user-action>div{display:grid;gap:3px}.request-user-action span{font-size:9px;font-weight:900;letter-spacing:.12em;color:#8d8d96}.request-user-action strong{font-size:13px;color:#fff}.request-user-action small{font-size:9px;line-height:1.45;color:#777781}.request-id-row{display:flex;align-items:center;gap:8px}.pilot-test-alert{border-color:rgba(100,145,255,.25)!important;background:rgba(100,145,255,.055)!important}
+
+/* Adjuntos y flujo con propuesta (08-10) */
+.request-attachments{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin:4px 0 14px}
+.request-attachments.compact{grid-template-columns:repeat(auto-fill,minmax(80px,1fr));margin:8px 0}
+.request-attachment{display:flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:#e7e7ea;text-decoration:none;overflow:hidden}
+.request-attachment.image{aspect-ratio:1/1}
+.request-attachment.image img{width:100%;height:100%;object-fit:cover;display:block}
+.request-attachment.file{padding:10px;font-size:13px;grid-column:span 2}
+.request-attachment.file span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-composer{margin-top:10px}
+.file-composer-pick{margin:4px 0}
+.file-composer .upload-file-list{display:grid;gap:6px;margin:6px 0}
+.file-composer .upload-file{display:flex;align-items:center;gap:8px;font-size:13px;color:#d8d8de}
+.file-composer .upload-file span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-composer .upload-file button{background:none;border:0;color:#e5484d;cursor:pointer;font-size:12px}
+.proposal-box{display:grid;gap:8px;margin-bottom:10px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08)}

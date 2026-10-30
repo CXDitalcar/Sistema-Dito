@@ -1,0 +1,134 @@
+/* Contabilidad · Identidad Visual DITALCAR 2025: superficies crema sobre burdeos,
+   rojo Scarlet Sage de acento, Montserrat SemiBold en títulos e Inter en textos. */
+.conta-page{--c-rojo:#9D202F;--c-rojo-h:#86192a;--c-negro:#1E1E1E;--c-burdeos:#28090A;--c-crema:#FFFEF1;--c-arena:#CAC59D;--c-tierra:#B7997B;--c-suave:#5f5a4e;--c-linea:#e6e1c6;--c-fila:#faf8e6;
+  display:grid;grid-template-columns:minmax(0,1fr);gap:16px;max-width:1180px;width:100%;min-width:0;margin:0 auto;font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.conta-page>*{min-width:0}
+.conta-page h1,.conta-page h2{font-family:Montserrat,Inter,sans-serif;font-weight:600;letter-spacing:-.01em;margin:0}
+
+.conta-hello h1{color:var(--c-crema);font-size:clamp(24px,3.4vw,32px)}
+.conta-hello p{margin:6px 0 0;color:var(--c-arena);font-size:15px}
+
+.conta-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.conta-tabs button{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,254,241,.25);background:transparent;color:var(--c-crema);font:inherit;font-weight:600;font-size:14px;cursor:pointer}
+.conta-tabs button:hover{border-color:var(--c-arena)}
+.conta-tabs button.active{background:var(--c-crema);color:var(--c-negro);border-color:var(--c-crema)}
+
+.conta-card{background:var(--c-crema);color:var(--c-negro);border-radius:16px;padding:20px;box-shadow:0 10px 28px rgba(0,0,0,.22)}
+.conta-card h2{font-size:19px;margin-bottom:6px}
+.conta-muted{color:var(--c-suave)}
+.conta-eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--c-rojo)}
+
+.conta-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);gap:20px;align-items:center;border-top:4px solid var(--c-rojo)}
+.conta-big{display:block;font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:clamp(32px,5vw,46px);line-height:1.05;margin:6px 0}
+.conta-hero p{margin:0;color:var(--c-suave)}
+.conta-hero-side{display:grid;gap:8px}
+.conta-brand-row{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid var(--c-linea)}
+.conta-brand-row span{font-weight:700}
+.conta-brand-row strong{font-family:Montserrat,Inter,sans-serif;font-weight:600;text-align:right}
+.conta-brand-row small{grid-column:1/-1;color:var(--c-suave);font-size:13px}
+
+.conta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.conta-kpi{display:grid;gap:4px;text-align:left;font:inherit;border:0;border-left:5px solid var(--c-arena)}
+button.conta-kpi{cursor:pointer;transition:transform .15s}
+button.conta-kpi:hover{transform:translateY(-1px)}
+.conta-kpi span{font-size:14px;font-weight:600;color:var(--c-suave)}
+.conta-kpi strong{font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:30px}
+.conta-kpi small{color:var(--c-suave);font-size:13px}
+.conta-kpi.ok{border-left-color:#2f6b45}
+.conta-kpi.warn{border-left-color:var(--c-rojo)}
+.conta-kpi.neutral{border-left-color:var(--c-tierra)}
+.conta-foot{margin:0;color:var(--c-arena);font-size:13px;line-height:1.5}
+.conta-card .conta-foot{color:var(--c-suave);margin-top:12px}
+
+.conta-btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:12px;border:0;background:var(--c-rojo);color:var(--c-crema);font:inherit;font-weight:700;font-size:15px;cursor:pointer;justify-self:start}
+.conta-btn:hover{background:var(--c-rojo-h)}
+.conta-btn:disabled{opacity:.7;cursor:wait}
+
+.conta-empty{display:grid;justify-items:center;text-align:center;gap:10px;padding:36px 20px}
+.conta-empty svg{color:var(--c-rojo)}
+.conta-empty p{margin:0;color:var(--c-suave);max-width:440px}
+.conta-empty .conta-btn{justify-self:center}
+
+.conta-alert{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;font-size:14px;font-weight:600}
+.conta-alert.ok{background:#e3f1e6;color:#2f6b45}
+.conta-alert.error{background:#fbe3e0;color:#86192a}
+.conta-msg{margin:10px 0 0;color:var(--c-suave);font-size:14px}
+
+.conta-toolbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.conta-chips{display:flex;flex-wrap:wrap;gap:6px}
+.conta-chips button{min-height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--c-arena);background:transparent;color:var(--c-negro);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.conta-chips button.active{background:var(--c-rojo);border-color:var(--c-rojo);color:var(--c-crema)}
+.conta-search{display:flex;align-items:center;gap:8px;min-height:40px;padding:0 12px;border-radius:12px;border:1px solid var(--c-arena);background:#fff;color:var(--c-suave);flex:1;max-width:340px;min-width:220px}
+.conta-search input{border:0;outline:0;background:transparent;font:inherit;color:var(--c-negro);width:100%}
+
+.conta-table-wrap{overflow-x:auto;margin-top:14px;border-radius:12px;border:1px solid var(--c-linea)}
+.conta-table{width:100%;border-collapse:collapse;font-size:14px;min-width:980px;background:#fff}
+.conta-table th{text-align:left;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--c-suave);background:var(--c-fila);padding:10px;border-bottom:1px solid var(--c-linea);white-space:nowrap}
+.conta-table td{padding:10px;border-bottom:1px solid var(--c-linea);vertical-align:top}
+.conta-table tr:last-child td{border-bottom:0}
+.conta-table td small{display:block;color:var(--c-suave);font-size:12px;margin-top:2px}
+.conta-table .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.conta-model{max-width:240px}
+.conta-nowrap{white-space:nowrap}
+
+.conta-tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap;background:#f1edd6;color:var(--c-suave)}
+.conta-tag.calculado{background:#e3f1e6;color:#2f6b45}
+.conta-tag.solo_marca{background:#fbe7c5;color:#7a4d06}
+.conta-tag.modelo_por_confirmar{background:#f6e0e2;color:var(--c-rojo)}
+.conta-tag.sin_modelo{background:#efe9cc;color:#5a4f2c}
+
+.conta-tri{display:inline-flex;border:1px solid var(--c-arena);border-radius:10px;overflow:hidden}
+.conta-tri button{min-width:36px;min-height:32px;border:0;background:#fff;color:var(--c-suave);font:inherit;font-size:13px;font-weight:600;cursor:pointer;display:grid;place-items:center}
+.conta-tri button+button{border-left:1px solid var(--c-linea)}
+.conta-tri button.active.yes{background:#2f6b45;color:#fff}
+.conta-tri button.active.no{background:var(--c-negro);color:var(--c-crema)}
+.conta-tri button.active.unk{background:var(--c-arena);color:var(--c-negro)}
+.conta-tri.busy{opacity:.6}
+
+.conta-upload{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;border-top:4px solid var(--c-rojo)}
+.conta-upload p{margin:4px 0;color:var(--c-suave)}
+.conta-upload small{color:var(--c-suave);font-size:13px}
+.conta-lists{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+.conta-lists li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid var(--c-linea)}
+.conta-lists li>svg{color:var(--c-rojo);flex:none;margin-top:2px}
+.conta-lists li>div{flex:1;display:grid;gap:3px;min-width:0}
+.conta-lists small{color:var(--c-suave);font-size:13px}
+.conta-note{color:#7a4d06!important}
+.conta-note.warn{color:var(--c-rojo)!important}
+
+@media (max-width:720px){
+  .conta-hero{grid-template-columns:1fr}
+  .conta-card{padding:16px}
+  .conta-search{max-width:none}
+}
+
+/* Marca y mes · condiciones por marca · flota y circulares */
+.conta-select{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--c-suave)}
+.conta-select select,.conta-canal{min-height:38px;padding:0 10px;border-radius:10px;border:1px solid var(--c-arena);background:#fff;color:var(--c-negro);font:inherit;font-size:14px}
+.conta-canal{min-height:32px;font-size:13px;max-width:170px}
+.conta-chips{margin-top:12px}
+.conta-conds{display:grid;gap:6px;min-width:150px}
+.conta-conds>span{display:flex;align-items:center;gap:8px}
+.conta-conds>span>small{min-width:44px;margin:0}
+button.conta-brand-row{font:inherit;text-align:left;cursor:pointer;color:inherit}
+button.conta-brand-row:hover{border-color:var(--c-rojo)}
+.conta-details summary{cursor:pointer;font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:16px}
+.conta-toolbar h2{margin:0}
+
+/* Acceso restringido (portada de Contabilidad) */
+.adm-closed{background:#FFFEF1;color:#1E1E1E;border-radius:16px;border-top:4px solid #9D202F;padding:28px;display:grid;gap:12px;max-width:560px;margin:40px auto}
+.adm-closed h1{margin:0;font-size:24px;color:#1E1E1E}
+.adm-closed p{margin:0;color:#5f5a4e;line-height:1.5}
+.adm-btn{display:inline-flex;align-items:center;gap:6px;justify-self:start;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:#9D202F;color:#FFFEF1;font:inherit;font-weight:700;cursor:pointer}
+.adm-btn:hover{background:#86192a}
+
+/* Carga de archivos */
+.conta-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.conta-btn.ghost{background:transparent;color:var(--c-negro);border:1px solid var(--c-arena)}
+.conta-btn.ghost:hover{border-color:var(--c-rojo);background:transparent}
+.conta-file{position:relative;cursor:pointer;overflow:hidden}
+.conta-file input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.conta-progress{position:relative;margin-top:12px;height:30px;border-radius:10px;background:var(--c-linea,#e6e1c6);overflow:hidden;display:flex;align-items:center}
+.conta-progress i{position:absolute;inset:0 auto 0 0;background:#e4b3ba}
+.conta-progress span{position:relative;padding:0 12px;font-size:13px;color:var(--c-negro)}
+.conta-ok{color:#2f6b45;font-weight:600}

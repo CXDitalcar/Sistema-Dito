@@ -1,0 +1,539 @@
+/* ======================================================
+   DITALAPP
+   APROBACIONES
+====================================================== */
+
+.approvals-page{
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+
+/* ======================================================
+   MÉTRICAS
+====================================================== */
+
+.approval-metrics{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:10px;
+  margin-bottom:22px;
+}
+
+.approval-metric{
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:15px;
+  text-align:left;
+  color:#fff;
+  border:1px solid #29292f;
+  border-radius:13px;
+  background:rgba(16,16,19,.94);
+  cursor:pointer;
+  transition:.18s ease;
+}
+
+.approval-metric:hover,
+.approval-metric-active{
+  border-color:rgba(225,38,47,.48);
+  transform:translateY(-1px);
+}
+
+.approval-metric-icon{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border-radius:10px;
+  color:#ff5058;
+  background:rgba(225,38,47,.09);
+}
+
+.approval-metric>div:last-child{
+  display:grid;
+  gap:2px;
+}
+
+.approval-metric strong{
+  font-size:22px;
+  line-height:1;
+}
+
+.approval-metric span{
+  color:#8d8d97;
+  font-size:10px;
+}
+
+.approval-metric-warning .approval-metric-icon{
+  color:#f5b64f;
+  background:rgba(245,182,79,.09);
+}
+
+.approval-metric-danger .approval-metric-icon{
+  color:#ff6168;
+  background:rgba(225,38,47,.12);
+}
+
+
+/* ======================================================
+   TABS
+====================================================== */
+
+.approval-tabs{
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  padding-bottom:1px;
+  border-bottom:1px solid #29292f;
+}
+
+.approval-tab{
+  flex:0 0 auto;
+  padding:11px 14px;
+  border:0;
+  border-bottom:2px solid transparent;
+  background:transparent;
+  color:#7f7f89;
+  font-size:11px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.approval-tab:hover{
+  color:#dddde2;
+}
+
+.approval-tab.active{
+  color:#fff;
+  border-bottom-color:#e1262f;
+}
+
+
+/* ======================================================
+   FILTROS
+====================================================== */
+
+.approval-toolbar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:14px 0 12px;
+}
+
+.approval-search{
+  min-width:260px;
+  flex:1;
+  height:42px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:0 12px;
+  border:1px solid #29292f;
+  border-radius:10px;
+  background:rgba(16,16,19,.94);
+  color:#6f6f79;
+}
+
+.approval-search input{
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:#fff;
+}
+
+.approval-filter-icon{
+  width:40px;
+  height:40px;
+  display:grid;
+  place-items:center;
+  color:#777781;
+}
+
+.approval-toolbar select{
+  height:42px;
+  min-width:150px;
+  padding:0 11px;
+  border:1px solid #29292f;
+  border-radius:10px;
+  outline:0;
+  background:#111114;
+  color:#c6c6cc;
+  font-size:10px;
+}
+
+
+/* ======================================================
+   TABLA
+====================================================== */
+
+.approval-table-wrap{
+  overflow:hidden;
+  border:1px solid #29292f;
+  border-radius:14px;
+  background:rgba(15,15,18,.94);
+}
+
+.approval-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.approval-table th{
+  padding:11px 13px;
+  text-align:left;
+  color:#6f6f79;
+  background:#111114;
+  border-bottom:1px solid #29292f;
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  white-space:nowrap;
+}
+
+.approval-table td{
+  padding:13px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+  color:#b9b9c0;
+  font-size:11px;
+  vertical-align:middle;
+}
+
+.approval-table tbody tr{
+  outline:0;
+  cursor:pointer;
+  transition:.15s ease;
+}
+
+.approval-table tbody tr:last-child td{
+  border-bottom:0;
+}
+
+.approval-table tbody tr:hover,
+.approval-table tbody tr:focus{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(225,38,47,.08),
+      rgba(225,38,47,.01)
+    );
+}
+
+.approval-request-main{
+  display:grid;
+  gap:3px;
+}
+
+.approval-request-main strong{
+  color:#f0f0f2;
+  font-size:12px;
+}
+
+.approval-request-main span{
+  color:#686872;
+  font-size:8px;
+}
+
+.approval-row-arrow{
+  width:32px;
+  color:#676771;
+}
+
+
+/* ======================================================
+   SLA
+====================================================== */
+
+.approval-sla{
+  min-width:90px;
+  display:grid;
+  gap:4px;
+}
+
+.approval-sla>span{
+  font-size:10px;
+  font-weight:750;
+}
+
+.approval-sla-bar{
+  width:78px;
+  height:3px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#2c2c32;
+}
+
+.approval-sla-bar i{
+  height:100%;
+  display:block;
+  border-radius:999px;
+}
+
+.sla-ok>span{
+  color:#64d999;
+}
+
+.sla-ok .approval-sla-bar i{
+  background:#40c982;
+}
+
+.sla-warning>span{
+  color:#f4b653;
+}
+
+.sla-warning .approval-sla-bar i{
+  background:#e9a83f;
+}
+
+.sla-danger>span{
+  color:#ff656c;
+}
+
+.sla-danger .approval-sla-bar i{
+  background:#ed3942;
+}
+
+.sla-paused>span{
+  color:#8caeff;
+}
+
+.sla-neutral>span{
+  color:#777781;
+}
+
+
+/* ======================================================
+   ESTADOS
+====================================================== */
+
+.approval-status-wrap{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  flex-wrap:wrap;
+}
+
+.approval-status{
+  display:inline-flex;
+  align-items:center;
+  padding:5px 8px;
+  border-radius:999px;
+  border:1px solid #303037;
+  font-size:8px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.approval-status-pending{
+  color:#ff7077;
+  background:rgba(225,38,47,.08);
+  border-color:rgba(225,38,47,.20);
+}
+
+.approval-status-info{
+  color:#8dafff;
+  background:rgba(67,117,231,.08);
+  border-color:rgba(67,117,231,.20);
+}
+
+.approval-status-approved{
+  color:#70d99e;
+  background:rgba(42,184,103,.08);
+  border-color:rgba(42,184,103,.20);
+}
+
+.approval-status-management{
+  color:#c696ff;
+  background:rgba(147,83,220,.08);
+  border-color:rgba(147,83,220,.20);
+}
+
+.approval-status-confirm{
+  color:#f4b653;
+  background:rgba(245,182,79,.08);
+  border-color:rgba(245,182,79,.20);
+}
+
+.approval-status-resolved{
+  color:#62d898;
+  background:rgba(42,184,103,.08);
+  border-color:rgba(42,184,103,.20);
+}
+
+.approval-status-rejected{
+  color:#ff646b;
+  background:rgba(225,38,47,.08);
+  border-color:rgba(225,38,47,.20);
+}
+
+.approval-status-neutral{
+  color:#a0a0aa;
+}
+
+.approval-reopened{
+  padding:4px 7px;
+  border-radius:999px;
+  color:#ff6b72;
+  background:rgba(225,38,47,.1);
+  font-size:7px;
+  font-weight:850;
+  text-transform:uppercase;
+}
+
+
+/* ======================================================
+   VACÍO
+====================================================== */
+
+.approval-empty{
+  min-height:220px;
+  display:grid;
+  place-items:center;
+  align-content:center;
+  gap:6px;
+  color:#6f6f79;
+}
+
+.approval-empty svg{
+  color:#494952;
+  margin-bottom:4px;
+}
+
+.approval-empty strong{
+  color:#b9b9c0;
+  font-size:13px;
+}
+
+.approval-empty span{
+  font-size:10px;
+}
+
+
+/* ======================================================
+   MÓVIL
+====================================================== */
+
+.approval-mobile-list{
+  display:none;
+}
+
+@media(max-width:1100px){
+
+  .approval-metrics{
+    grid-template-columns:
+      repeat(3,minmax(0,1fr));
+  }
+
+  .approval-toolbar{
+    flex-wrap:wrap;
+  }
+
+  .approval-search{
+    flex-basis:100%;
+  }
+
+}
+
+@media(max-width:760px){
+
+  .approval-metrics{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+  .approval-filter-icon{
+    display:none;
+  }
+
+  .approval-toolbar select{
+    flex:1;
+    min-width:calc(50% - 4px);
+  }
+
+  .approval-table-wrap{
+    display:none;
+  }
+
+  .approval-mobile-list{
+    display:grid;
+    gap:10px;
+  }
+
+  .approval-mobile-card{
+    width:100%;
+    display:grid;
+    gap:14px;
+    padding:16px;
+    text-align:left;
+    color:#fff;
+    border:1px solid #29292f;
+    border-radius:14px;
+    background:rgba(16,16,19,.95);
+    cursor:pointer;
+  }
+
+  .approval-mobile-top{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+  }
+
+  .approval-mobile-top>div:first-child{
+    display:grid;
+    gap:3px;
+  }
+
+  .approval-mobile-top small{
+    color:#696973;
+    font-size:8px;
+  }
+
+  .approval-mobile-top strong{
+    font-size:14px;
+  }
+
+  .approval-mobile-info{
+    display:grid;
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .approval-mobile-info>div{
+    display:grid;
+    gap:3px;
+  }
+
+  .approval-mobile-info span{
+    color:#70707a;
+    font-size:8px;
+    text-transform:uppercase;
+  }
+
+  .approval-mobile-info strong{
+    color:#c8c8ce;
+    font-size:10px;
+  }
+
+  .approval-mobile-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    padding-top:11px;
+    border-top:1px solid #29292f;
+  }
+
+  .approval-mobile-foot>span{
+    display:flex;
+    align-items:center;
+    gap:4px;
+    color:#aaaab3;
+    font-size:9px;
+  }
+
+}

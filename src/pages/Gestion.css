@@ -1,0 +1,151 @@
+/* Gestión · tipografía base 14–16 px; textos pequeños sólo para metadata. */
+
+.gestion-page {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 4px 48px;
+  color: #ffffff;
+}
+
+.gestion-head {
+  margin-bottom: 30px;
+}
+
+.gestion-head h1 {
+  margin: 8px 0 10px;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.gestion-head p {
+  margin: 0;
+  color: #a8a8b0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.gestion-section {
+  margin-bottom: 34px;
+}
+
+.gestion-section h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.gestion-section-note {
+  margin: 0 0 14px;
+  color: #8a8a93;
+  font-size: 13px;
+}
+
+.gestion-section h2 + .gestion-grid {
+  margin-top: 14px;
+}
+
+.gestion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.gestion-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  padding: 22px;
+  border: 1px solid rgba(225, 38, 47, 0.14);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(23, 23, 27, 0.96), rgba(12, 12, 15, 0.94));
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+a.gestion-card:hover,
+a.gestion-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: rgba(225, 38, 47, 0.55);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.gestion-card-disabled {
+  border-color: #26262c;
+  opacity: 0.72;
+  cursor: default;
+}
+
+.gestion-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gestion-card-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(225, 38, 47, 0.2);
+  border-radius: 13px;
+  background: rgba(225, 38, 47, 0.1);
+  color: #ff4a53;
+}
+
+.gestion-card-disabled .gestion-card-icon {
+  border-color: #303037;
+  background: #18181c;
+  color: #8a8a93;
+}
+
+.gestion-card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #a8a8b0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.gestion-card h3 {
+  margin: 20px 0 8px;
+  font-size: 19px;
+}
+
+.gestion-card p {
+  margin: 0;
+  color: #a3a3ad;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.gestion-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: #f1f1f4;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.gestion-empty {
+  padding: 22px;
+  border: 1px solid #29292f;
+  border-radius: 14px;
+  background: #111114;
+  color: #a5a5ae;
+  font-size: 15px;
+}
+
+@media (max-width: 620px) {
+  .gestion-card {
+    min-height: 0;
+  }
+}

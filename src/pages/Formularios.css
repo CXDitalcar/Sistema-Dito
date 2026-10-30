@@ -1,0 +1,646 @@
+.forms-page {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 4px 40px;
+}
+
+
+/* ======================================================
+   CABECERA
+====================================================== */
+
+.forms-page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.forms-page-head h1 {
+  margin: 6px 0 8px;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.forms-page-head p {
+  max-width: 680px;
+  margin: 0;
+  color: #a8a8ad;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.forms-head-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 230px;
+  padding: 14px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.018)
+    );
+}
+
+.forms-head-badge svg {
+  color: #e3172f;
+}
+
+.forms-head-badge div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.forms-head-badge span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #77777c;
+}
+
+.forms-head-badge strong {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+
+/* ======================================================
+   SECCIONES
+====================================================== */
+
+.forms-section {
+  margin-bottom: 38px;
+}
+
+.forms-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.forms-section-head h2 {
+  margin: 4px 0 0;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.forms-section-head p {
+  margin: 6px 0 0;
+  color: #85858a;
+  font-size: 13px;
+}
+
+.forms-section-count {
+  padding: 7px 11px;
+  border: 1px solid rgba(227, 23, 47, 0.22);
+  border-radius: 999px;
+  background: rgba(227, 23, 47, 0.08);
+  color: #f7a0aa;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* ======================================================
+   GRID FORMULARIOS
+====================================================== */
+
+.forms-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  gap: 17px;
+}
+
+.form-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 430px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(227, 23, 47, 0.1),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      #151518,
+      #0e0e10
+    );
+  box-shadow:
+    0 16px 45px rgba(0, 0, 0, 0.18);
+}
+
+.form-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 22px;
+  height: 2px;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #e3172f,
+      transparent
+    );
+  opacity: 0.7;
+}
+
+.form-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 22px 0;
+}
+
+.form-card-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background:
+    rgba(227, 23, 47, 0.12);
+  color: #ef3147;
+}
+
+.form-frequency {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: #a6a6aa;
+  font-size: 11px;
+}
+
+.form-card-body {
+  padding: 20px 22px 0;
+}
+
+.form-code {
+  color: #e3172f;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.form-card-body h3 {
+  margin: 7px 0 8px;
+  color: #ffffff;
+  font-size: 21px;
+  letter-spacing: -0.025em;
+}
+
+.form-card-body p {
+  margin: 0;
+  color: #909095;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+
+/* ======================================================
+   ÚLTIMA REVISIÓN
+====================================================== */
+
+.form-last-review {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 20px 22px 0;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.form-last-review span {
+  color: #6f6f74;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.form-last-review strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.form-last-review small {
+  color: #86868b;
+  font-size: 11px;
+}
+
+
+/* ======================================================
+   RESULTADOS
+====================================================== */
+
+.form-result-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 22px 0;
+}
+
+.result-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.result-ok {
+  background: rgba(58, 191, 126, 0.1);
+  color: #64d89e;
+}
+
+.result-alert {
+  background: rgba(227, 23, 47, 0.12);
+  color: #ff7181;
+}
+
+.result-requested {
+  background: rgba(241, 171, 49, 0.11);
+  color: #f1ba5f;
+}
+
+.form-breach-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 22px 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(227, 23, 47, 0.17);
+  border-radius: 11px;
+  background: rgba(227, 23, 47, 0.055);
+  color: #f3a2ab;
+  font-size: 11px;
+}
+
+
+/* ======================================================
+   BOTONES
+====================================================== */
+
+.form-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding: 20px 22px 22px;
+}
+
+.form-primary-btn,
+.form-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 39px;
+  padding: 0 13px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.form-primary-btn {
+  flex: 1;
+  border: 1px solid #e3172f;
+  background:
+    linear-gradient(
+      135deg,
+      #e3172f,
+      #ae0e20
+    );
+  color: #ffffff;
+}
+
+.form-secondary-btn {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.035);
+  color: #d0d0d3;
+}
+
+.form-primary-btn:hover,
+.form-secondary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.form-secondary-btn:hover {
+  border-color:
+    rgba(255, 255, 255, 0.17);
+}
+
+
+/* ======================================================
+   VACÍO
+====================================================== */
+
+.forms-empty {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 24px;
+  border: 1px dashed rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.018);
+  color: #7e7e83;
+}
+
+.forms-empty svg {
+  color: #e3172f;
+}
+
+.forms-empty div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.forms-empty strong {
+  color: #dedee1;
+  font-size: 13px;
+}
+
+.forms-empty span {
+  font-size: 12px;
+}
+
+
+/* ======================================================
+   TARJETAS RESUMEN
+====================================================== */
+
+.forms-summary-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+  gap: 13px;
+  margin-bottom: 16px;
+}
+
+.forms-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  background: #121214;
+}
+
+.forms-summary-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: rgba(227, 23, 47, 0.1);
+  color: #ed3147;
+}
+
+.forms-summary-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.forms-summary-card strong {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.forms-summary-card span {
+  color: #85858a;
+  font-size: 11px;
+}
+
+
+/* ======================================================
+   TABLA SEGUIMIENTO
+====================================================== */
+
+.forms-tracking-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 17px;
+  background: #111113;
+}
+
+.forms-tracking-head,
+.forms-tracking-row {
+  display: grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.25fr
+    1.55fr
+    36px;
+  gap: 15px;
+  align-items: center;
+}
+
+.forms-tracking-head {
+  padding: 11px 17px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.forms-tracking-head span {
+  color: #626268;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.forms-tracking-row {
+  min-height: 70px;
+  padding: 13px 17px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.forms-tracking-row:last-child {
+  border-bottom: 0;
+}
+
+.forms-tracking-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.forms-tracking-row strong {
+  color: #e7e7e9;
+  font-size: 12px;
+}
+
+.forms-tracking-row small {
+  color: #737378;
+  font-size: 10px;
+}
+
+.tracking-results {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.tracking-view-btn {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #9d9da2;
+  cursor: pointer;
+}
+
+.tracking-view-btn:hover {
+  border-color: rgba(227, 23, 47, 0.35);
+  color: #ef3147;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 1100px) {
+  .forms-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+  .forms-tracking-head {
+    display: none;
+  }
+
+  .forms-tracking-row {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .tracking-results {
+    grid-column: 1 / -1;
+  }
+
+  .tracking-view-btn {
+    position: absolute;
+    right: 16px;
+  }
+
+  .forms-tracking-row {
+    position: relative;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .forms-page {
+    padding-bottom: 24px;
+  }
+
+  .forms-page-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .forms-head-badge {
+    min-width: 0;
+  }
+
+  .forms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .forms-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .forms-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-card {
+    min-height: 0;
+  }
+
+  .form-card-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-primary-btn,
+  .form-secondary-btn {
+    width: 100%;
+  }
+
+  .forms-tracking-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-right: 58px;
+  }
+
+  .tracking-results {
+    grid-column: auto;
+  }
+}
+
+.form-readonly-badge {
+  min-height: 42px;
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.68);
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.form-card-signal{display:flex;align-items:center;gap:7px;color:#8b8b94;font-size:9px;font-weight:700}.tracking-results>.signal-light{margin-right:3px}

@@ -1,0 +1,47 @@
+/* Portada "Academia DITALCAR" */
+.ah-next{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+@media (max-width:640px){.ah-next{grid-template-columns:1fr;justify-items:start}}
+.ah-progress{position:relative;width:132px;height:132px;display:grid;place-items:center;text-align:center}
+.ah-progress svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ah-ring-bg{fill:none;stroke:#e6e1c6;stroke-width:3.2}
+.ah-ring{fill:none;stroke:#9D202F;stroke-width:3.2;stroke-linecap:round;transition:stroke-dasharray .4s}
+.ah-progress strong{position:relative;font-family:Montserrat,Inter,sans-serif;font-size:28px;font-weight:600;color:#1E1E1E;margin-top:-8px}
+.ah-progress span{position:absolute;bottom:30px;left:0;right:0;font-size:11px;color:#5f5a4e;line-height:1.2;padding:0 18px}
+.ah-next-body{display:grid;gap:10px}
+.ah-next-body h2{margin:0;font-size:22px;color:#1E1E1E}
+.ah-next-body p{margin:0;color:#5f5a4e;font-size:15px}
+.ah-next-body p strong{color:#1E1E1E}
+.ah-cta{max-width:520px}
+.ah-eval{display:inline-flex;align-items:center;gap:8px;justify-self:start;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #CAC59D;color:#1E1E1E;text-decoration:none;font-size:14px;font-weight:600}
+.ah-eval:hover{border-color:#9D202F;color:#9D202F}
+.ah-courses{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.ah-course{display:grid;gap:8px;align-content:start;padding:16px;border-radius:16px;background:#FFFEF1;color:#1E1E1E;text-decoration:none;border:1px solid #FFFEF1;box-shadow:0 10px 28px rgba(0,0,0,.18);transition:border-color .15s,transform .15s}
+.ah-course:hover{border-color:#9D202F;transform:translateY(-1px)}
+.ah-course-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ah-course .portal-tile-icon{width:40px;height:40px;flex-basis:40px;border-radius:12px;background:#f6e7e2;color:#9D202F;display:grid;place-items:center}
+.ah-course.completado .portal-tile-icon{background:#e3f1e6;color:#2f6b45}
+.ah-course>strong{font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:17px;line-height:1.25}
+.ah-course>small{color:#5f5a4e;font-size:13px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ah-meta{display:flex;align-items:center;gap:6px;color:#5f5a4e;font-size:13px}
+.ah-bar{height:8px;border-radius:999px;background:#e6e1c6;overflow:hidden}
+.ah-bar i{display:block;height:100%;background:#9D202F;border-radius:inherit}
+.ah-course.completado .ah-bar i{background:#2f6b45}
+.ah-course-foot{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;color:#1E1E1E}
+.ah-chip{padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;background:#f1edd6;color:#5f5a4e}
+.ah-chip.en_curso{background:#fbe7c5;color:#7a4d06}
+.ah-chip.encuesta{background:#fbe7c5;color:#7a4d06}
+.ah-chip.completado{background:#e3f1e6;color:#2f6b45}
+.ah-chip.nuevo{background:#9D202F;color:#FFFEF1}
+/* Pantallas de Academia dentro de la interfaz: pestañas bajo la barra superior */
+.theme-ditalcar .academy-embedded .academy-tabs{top:76px}
+.theme-ditalcar .academy-embedded{padding-top:4px}
+/* Celular: anillo compacto para que "Comenzar" quede a la vista sin bajar */
+@media (max-width:640px){
+  .ah-next{position:relative}
+  .ah-progress{position:absolute;top:16px;right:16px;width:64px;height:64px}
+  .ah-progress strong{font-size:16px;margin-top:0}
+  .ah-progress span{display:none}
+  .ah-next-body h2{padding-right:76px;min-height:64px;display:flex;align-items:center}
+}
+.academy-embedded [id^="curso-"]{scroll-margin-top:156px}
+.academy-embedded a.course-action{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
