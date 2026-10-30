@@ -6,7 +6,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "func start",
-    "check": "node --check src/index.js"
+    "check": "node --check src/index.js",
+    "servidor": "node --disable-warning=ExperimentalWarning server/server.mjs",
+    "respaldo": "node --disable-warning=ExperimentalWarning server/respaldo.mjs",
+    "migrar": "node --disable-warning=ExperimentalWarning server/migrar-desde-azure.mjs"
   },
   "dependencies": {
     "@azure/data-tables": "^13.3.0",
